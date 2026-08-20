@@ -2,7 +2,7 @@
 
 # ⚡ Vector PDF Suite
 
-### Private, fast and batch-first PDF tools — right on your computer.
+### Private, fast and batch-first PDF tools - right on your computer.
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.116-009688?logo=fastapi&logoColor=white)
