@@ -82,7 +82,7 @@ The React client sends multipart jobs to FastAPI. Uploaded files are streamed to
 ### Requirements
 
 - Python 3.11 or newer
-- Node.js 20 or newer with Corepack
+- Node.js 24 or newer with Corepack
 - Windows 10/11 for desktop packaging
 
 ### Windows
