@@ -1,0 +1,13 @@
+{
+  "name": "vector-pdf-suite-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "pnpm --filter vector-pdf-suite dev",
+    "build": "pnpm --filter vector-pdf-suite build",
+    "desktop:build": "pnpm --filter vector-pdf-suite desktop:build",
+    "portable:build": "pnpm --filter vector-pdf-suite portable:build"
+  }
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .field { @apply flex flex-col gap-2 text-xs font-semibold uppercase tracking-wider text-slate-500; }
+  .field select { @apply rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-sm font-medium normal-case text-slate-900 outline-none focus:border-cyan dark:border-white/10 dark:bg-white/5 dark:text-white; }
+  .dark .field select { color-scheme: dark; background-color: #111827; color: #f8fafc; }
+  .dark .field select option { background-color: #111827; color: #f8fafc; }
+  .field select option { background-color: #ffffff; color: #0f172a; }
+  .field input[type=range] { @apply mt-3 accent-cyan; }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "vector-pdf-suite",
+  "description": "A fast, private, batch-first PDF toolkit for the web and Windows desktop.",
+  "author": "José Carlos Malacara Espinosa",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {"dev": "vite", "build": "vite build", "preview": "vite preview", "desktop:build": "electron-builder --win nsis --config.directories.output=release-installer --config.electronDist=node_modules/electron/dist", "portable:build": "electron-builder --win portable --config.directories.output=release-portable --config.electronDist=node_modules/electron/dist"},
+  "packageManager": "pnpm@11.19.0",
+  "dependencies": {"axios": "1.19.0", "framer-motion": "13.1.0", "lucide-react": "1.32.0", "prop-types": "15.8.1", "react": "18.3.1", "react-dom": "18.3.1", "react-dropzone": "20.1.0", "react-hot-toast": "2.6.0"},
+  "devDependencies": {"@vitejs/plugin-react": "6.0.5", "autoprefixer": "10.5.4", "electron": "43.4.0", "electron-builder": "26.15.3", "postcss": "8.5.26", "tailwindcss": "3.4.19", "vite": "8.2.1"},
+  "build": {
+    "appId": "com.vector.pdfsuite",
+    "productName": "Vector PDF Suite",
+    "directories": {"output": "release"},
+    "files": ["electron/**/*", "package.json"],
+    "extraResources": [
+      {"from": "dist", "to": "frontend"},
+      {"from": "../backend/dist/Vector PDF Suite.exe", "to": "backend/vector-pdf-backend.exe"}
+    ],
+    "win": {"target": ["nsis"], "artifactName": "Vector-PDF-Suite-${version}-${arch}.${ext}"},
+    "nsis": {"oneClick": false, "allowToChangeInstallationDirectory": true, "createDesktopShortcut": true, "createStartMenuShortcut": true}
+  }
+}

@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      PDFSUITE_CACHE_TTL_SECONDS: 3600
+      PDFSUITE_CACHE_MAX_BYTES: 524288000
+    volumes: ["pdf-cache:/app/data"]
+    restart: unless-stopped
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports: ["8080:80"]
+    depends_on: [backend]
+    restart: unless-stopped
+volumes:
+  pdf-cache:

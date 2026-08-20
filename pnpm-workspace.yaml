@@ -1,0 +1,6 @@
+packages:
+  - frontend
+allowBuilds:
+  electron: true
+  electron-builder: true
+  electron-winstaller: true
