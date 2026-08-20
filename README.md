@@ -182,7 +182,7 @@ GitHub Actions runs backend tests and a production frontend build for every push
 
 ## Author
 
-Created with care for students and educators by **Engineer José Carlos Malacara Espinosa**.
+Created with care for students and educators by **José Carlos Malacara Espinosa**.
 
 ## License
 
