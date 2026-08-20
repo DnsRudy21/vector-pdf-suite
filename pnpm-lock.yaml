@@ -15,25 +15,25 @@ importers:
         version: 1.19.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       framer-motion:
         specifier: 13.1.0
-        version: 13.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 13.1.0(react-dom@18.3.1(react@19.2.8))(react@19.2.8)
       lucide-react:
         specifier: 1.32.0
-        version: 1.32.0(react@18.3.1)
+        version: 1.32.0(react@19.2.8)
       prop-types:
         specifier: 15.8.1
         version: 15.8.1
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: 19.2.8
+        version: 19.2.8
       react-dom:
         specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        version: 18.3.1(react@19.2.8)
       react-dropzone:
         specifier: 20.1.0
-        version: 20.1.0(react@18.3.1)
+        version: 20.1.0(react@19.2.8)
       react-hot-toast:
         specifier: 2.6.0
-        version: 2.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 2.6.0(react-dom@18.3.1(react@19.2.8))(react@19.2.8)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: 6.0.5
@@ -155,8 +155,8 @@ packages:
   '@oxc-project/types@0.144.0':
     resolution: {integrity: sha512-nuhZIOLuI6TFQ32I/WnUx+SCPY7SdSKwgnFHydAuoS1+Z4BRcaP+RRJmGzl9lw+0OFF7UmaESf7KQRXaNLHypg==}
 
-  '@peculiar/asn1-schema@2.9.3':
-    resolution: {integrity: sha512-SOux4+jikCnOwoJvpBp/grOqzFmJPnNSwe3sAg1Bn93YdmCiDtvolZifJIhiRq0UWMTnLRPj9/ZCMAc2W9VsMQ==}
+  '@peculiar/asn1-schema@2.9.0':
+    resolution: {integrity: sha512-AKvPMOM7LfK0uFe1m7o7+veOa8xQGPqsqOrKi3QKgCElzwjGp39mbhr2g7mt/v/mXQHiIvJmDj5cJS173x8Q9Q==}
 
   '@peculiar/json-schema@1.1.12':
     resolution: {integrity: sha512-coUfuoMeIB7B8/NMekxaDzLhaYmp0HZNPEjYRm9goRou8UZIC3z21s0sL9AWoCw4EG876QyO3kYrc61WNF9B/w==}
@@ -1376,8 +1376,8 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react@18.3.1:
-    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+  react@19.2.8:
+    resolution: {integrity: sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw==}
     engines: {node: '>=0.10.0'}
 
   read-binary-file-arch@1.0.6:
@@ -1874,7 +1874,7 @@ snapshots:
 
   '@oxc-project/types@0.144.0': {}
 
-  '@peculiar/asn1-schema@2.9.3':
+  '@peculiar/asn1-schema@2.9.0':
     dependencies:
       '@peculiar/utils': 2.0.3
       asn1js: 3.0.10
@@ -1890,7 +1890,7 @@ snapshots:
 
   '@peculiar/webcrypto@1.7.1':
     dependencies:
-      '@peculiar/asn1-schema': 2.9.3
+      '@peculiar/asn1-schema': 2.9.0
       '@peculiar/json-schema': 1.1.12
       '@peculiar/utils': 2.0.3
       tslib: 2.8.1
@@ -2483,14 +2483,14 @@ snapshots:
 
   fraction.js@5.3.4: {}
 
-  framer-motion@13.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  framer-motion@13.1.0(react-dom@18.3.1(react@19.2.8))(react@19.2.8):
     dependencies:
       motion-dom: 13.0.0
       motion-utils: 13.0.0
       tslib: 2.8.1
     optionalDependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.8
+      react-dom: 18.3.1(react@19.2.8)
 
   fs-extra@10.1.0:
     dependencies:
@@ -2807,9 +2807,9 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  lucide-react@1.32.0(react@18.3.1):
+  lucide-react@1.32.0(react@19.2.8):
     dependencies:
-      react: 18.3.1
+      react: 19.2.8
 
   matcher@3.0.0:
     dependencies:
@@ -3046,30 +3046,28 @@ snapshots:
 
   quick-lru@5.1.1: {}
 
-  react-dom@18.3.1(react@18.3.1):
+  react-dom@18.3.1(react@19.2.8):
     dependencies:
       loose-envify: 1.4.0
-      react: 18.3.1
+      react: 19.2.8
       scheduler: 0.23.2
 
-  react-dropzone@20.1.0(react@18.3.1):
+  react-dropzone@20.1.0(react@19.2.8):
     dependencies:
       attr-accept: 2.2.5
       file-selector: 4.1.0
-      react: 18.3.1
+      react: 19.2.8
 
-  react-hot-toast@2.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-hot-toast@2.6.0(react-dom@18.3.1(react@19.2.8))(react@19.2.8):
     dependencies:
       csstype: 3.2.3
       goober: 2.1.19(csstype@3.2.3)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.8
+      react-dom: 18.3.1(react@19.2.8)
 
   react-is@16.13.1: {}
 
-  react@18.3.1:
-    dependencies:
-      loose-envify: 1.4.0
+  react@19.2.8: {}
 
   read-binary-file-arch@1.0.6(supports-color@7.2.0):
     dependencies:
@@ -3377,7 +3375,7 @@ snapshots:
 
   webcrypto-core@1.9.2:
     dependencies:
-      '@peculiar/asn1-schema': 2.9.3
+      '@peculiar/asn1-schema': 2.9.0
       '@peculiar/json-schema': 1.1.12
       '@peculiar/utils': 2.0.3
       asn1js: 3.0.10
