@@ -10,7 +10,7 @@ jobs:
       - run: pip install -r backend/requirements-dev.txt
       - run: pytest backend/tests -q
         env: { PYTHONPATH: backend }
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with: { version: 11.19.0 }
       - uses: actions/setup-node@v4
         with: { node-version: 20, cache: pnpm }
